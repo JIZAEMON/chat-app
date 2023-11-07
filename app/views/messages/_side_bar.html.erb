@@ -1,0 +1,19 @@
+<div class="side-bar">
+  <div class="side-bar__header">
+    <a class="side-bar__header--user-name" href="https://www.google.com/">
+      UserName
+    </a>
+    <a class="side-bar__header--gen-room" href="https://www.google.com/">
+      チャットを作成する
+    </a>
+  </div>
+  <div class="side-bar__room-list">
+    <% 15.times do |i| %>
+      <div class="side-bar__room-list--room">
+        <a class="side-bar__room-list--room-name" href="https://www.google.com/">
+          Room<%= i+1 %>
+        </a>
+      </div>
+    <% end %>
+  </div>
+</div>
