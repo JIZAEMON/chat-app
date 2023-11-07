@@ -1,0 +1,162 @@
+/* <div class="test-box"></div> */
+/* .test-box{
+  background-color: red;
+  height: 100%;
+  width: 100%;
+} */
+
+a{
+  text-decoration: none;
+}
+
+.wrapper{
+  display: flex;
+}
+
+.side-bar{
+  width: 300px;
+  height: 100vh;
+}
+
+.side-bar__header{
+  background-color: #253141;
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-bar__header--user-name{
+  color: #FAFAFA;
+  font-size: 16px;
+}
+
+.side-bar__header--gen-room{
+  color: deepskyblue;
+  font-size: 10px;
+  border: 1px lightblue solid;
+  padding: 14px;
+}
+
+.side-bar__room-list{
+  background-color: #2F3E51;
+  padding: 0 20px;
+  height: calc(100vh - 100px);  /*100vh - side_bar__headerのheight*/
+  overflow: scroll;
+}
+
+.side-bar__room-list--room{
+  padding: 20px 20px 40px;
+}
+
+.side-bar__room-list--room-name{
+  color: white;
+}
+
+.main{
+  width: calc(100vw - 300px);
+  height: 100vh;
+}
+
+.main__header{
+  height: 100px;
+  background-color: #FFFFFF;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__header--room-name{
+  font-size: 24px;
+  color: #333;
+  padding-top: 36px;
+}
+
+.main__header--destroy-room-box{
+  margin-top: 40px;
+}
+
+.main__header--destroy-room-link{
+  color: darkred;
+  border: darkred solid 1px;
+  padding: 20px;
+}
+
+.main__chat-log{
+  background-color: #FAFAFA;
+  height: calc(100vh - 100px - 90px); /*100vh - main__topとmain__chat-inputのheight*/
+  padding: 46px 40px 0 40px;
+  overflow: scroll;
+}
+
+.main__chat-log--container{
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.main__chat-log--upper{
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.main__chat-log--user-name{
+  font-size: 16px;
+  color: #434A54;
+  padding-right: 10px;
+}
+
+.main__chat-log--post-date{
+  font-size: 12px;
+  color: #999;
+}
+
+.main__chat-log--message{
+  font-size: 14px;
+  color: #434A54;
+}
+
+.main__chat-input{
+  background-color: #DDDDDD;
+  height: 90px;
+  padding: 20px 40px;
+  display: flex;
+}
+
+.main__chat-input--message-form{
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+
+.main__chat-input--message-input{
+  width: 100%;
+  padding-left: 10px;
+  border: none;
+  height: 50px;
+}
+
+.main__chat-input--message-image{
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.main__chat-input--message-image-hidden{
+  display: none;
+}
+
+
+.main__chat-input--send-button{
+  background-color: #38AEF0;
+  height: 50px;
+  padding: 0 20px;
+  margin-left: 15px;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
