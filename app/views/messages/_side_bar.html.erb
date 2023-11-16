@@ -1,8 +1,9 @@
 <div class="side-bar">
   <div class="side-bar__header">
-    <a class="side-bar__header--user-name" href="https://www.google.com/">
-      UserName
-    </a>
+    <div class="side-bar__header--user-name">
+      <%= link_to current_user.name, edit_user_path(current_user.id)%>
+    </div>
+    
     <a class="side-bar__header--gen-room" href="https://www.google.com/">
       チャットを作成する
     </a>
