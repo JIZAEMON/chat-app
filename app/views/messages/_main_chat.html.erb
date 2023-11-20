@@ -7,18 +7,9 @@
       </a>
     </div>
   </div>
+  
   <div class="main__chat-log">
-    <% 10.times do |i| %>
-      <div class="main__chat-log--container">
-        <div class="main__chat-log--upper">
-          <div class="main__chat-log--user-name">UserName</div>
-          <div class="main__chat-log--post-date">2020/3/31(Wed) 12:43:30</div>
-        </div>
-        <div class="main__chat-log--message">
-          MESSAGE<%= i+1 %>
-        </div>
-      </div>
-    <% end %>
+    <%= render partial: 'message', collection: @messages %>
   </div>
 
   <%= form_with model: [@room, @message], class: 'main__chat-input', local: true do |f| %>
