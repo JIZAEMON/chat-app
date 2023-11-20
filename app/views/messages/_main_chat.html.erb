@@ -4,9 +4,7 @@
       <%= @room.name %>
     </div>
     <div class="main__header--destroy-room-box">
-      <a class="main__header--destroy-room-link" href="https://www.google.co.jp/">
-        チャットを終了する
-      </a>
+      <%= link_to 'チャットを終了する', room_path(@room), data: { turbo_method: :delete }, class: 'main__header--destroy-room-link' %>
     </div>
   </div>
   
