@@ -1,0 +1,15 @@
+<div class="main__chat-log--container">
+  <div class="main__chat-log--upper">
+    <div class="main__chat-log--user-name">
+      <%= message.user.name %>
+    </div>
+
+    <div class="main__chat-log--post-date">
+      <%= l message.created_at %>
+    </div>
+  </div>
+
+  <div class="main__chat-log--message">
+    <%= message.content %>
+  </div>
+</div>
