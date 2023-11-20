@@ -3,17 +3,12 @@
     <div class="side-bar__header--user-name">
       <%= link_to current_user.name, edit_user_path(current_user.id)%>
     </div>
-    
-    <a class="side-bar__header--gen-room" href="https://www.google.com/">
-      チャットを作成する
-    </a>
+    <%= link_to 'チャットを作成する', new_room_path, class: "side-bar__header--gen-room" %>
   </div>
   <div class="side-bar__room-list">
-    <% 15.times do |i| %>
+    <% current_user.rooms.each do |room| %>
       <div class="side-bar__room-list--room">
-        <a class="side-bar__room-list--room-name" href="https://www.google.com/">
-          Room<%= i+1 %>
-        </a>
+        <%= link_to room.name, "https://www.google.com/", class: "side-bar__room-list--room-name" %>
       </div>
     <% end %>
   </div>
